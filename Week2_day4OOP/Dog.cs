@@ -19,25 +19,25 @@ namespace Week2_day4OOP
         public string HairLength
         {
             get { return this.hairLength; }
-            set {this.HairLength = value; }
+            set {this.hairLength = value; }
         }
 
         public float Height
         {
             get { return this.height; }
-            set { this.Height = value; }
+            set { this.height = value; }
         }
 
         public string RunningSpeed
         {
             get { return this.runningSpeed; }
-            set { this.RunningSpeed = value; }
+            set { this.runningSpeed = value; }
         }
 
         public double Weight
         {
             get { return this.weight; }
-            set { this.Weight = value; }
+            set { this.weight = value; }
         }
 
 
