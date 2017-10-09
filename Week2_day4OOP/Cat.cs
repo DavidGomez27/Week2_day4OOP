@@ -11,12 +11,15 @@ namespace Week2_day4OOP
         //STATES
         //fields
         private string name;
+        private int age;
+        private string furColor;
+        private bool isHungry;
 
         //Properties
         public string Name
         {
-            get { return this.name;  }
-            set { this.name = value; }
+            get { return this.name;  } //get sends to program
+            set { this.name = value; }//set brings from program
 
         }
 
@@ -30,12 +33,39 @@ namespace Week2_day4OOP
         }
 
 
+        //overloading a constructor
+        public Cat(string name, int age, string furColor)
+        {
+            this.name = name;
+            this.age = age;
+            this.furColor = furColor;
+        }
+
+        //Methods
+
+        public void Eat()
+        {
+            if (isHungry == true)
+            {
+                isHungry = false;
+            }
 
 
+            Console.WriteLine("Is the cat hungry? " + isHungry);
+
+        }
 
 
+        public void WorkOut()
+        {
+            if(isHungry == false)
+            {
+                isHungry = true;
+            }
 
+            Console.WriteLine("The cat worked out. Hungry now? " + isHungry);
 
+        }
 
 
     }
